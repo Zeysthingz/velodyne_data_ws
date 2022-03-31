@@ -1,0 +1,3 @@
+[submodule "src/udacity-pcl-tut"]
+	path = src/udacity-pcl-tut
+	url = git@github.com:Zeysthingz/udacity-pcl-tut.git
