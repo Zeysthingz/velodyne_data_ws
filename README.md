@@ -39,5 +39,4 @@ https://www.youtube.com/watch?v=4L6A2cyH_II&list=PLI9niWoEI8BghYVuZ1c0jHLidw4vRO
 <span style="color: orange">You can use .rviz saved configuration file to open point clouds on rviz.</span>
 
 
-<font color="red">fssfwe</font>
 
