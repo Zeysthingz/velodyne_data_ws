@@ -12,14 +12,14 @@ To download PCL from source :
 * cd eigen-3.3.7 && mkdir build && cd build
 * sudo make install
 * cd ../.. && rm -rf eigen-3.3.7/ && rm -f eigen-3.3.7.tar.gz
-*cd ~/programs
-*git clone https://github.com/PointCloudLibrary/pcl.git --> download source file where you want to locate.
-*cd pcl
-*mkdir build
-*cd build
-*cmake -D BUILD_CUDA=0 -D BUILD_GPU=0 -D WITH_CUDA=0 -D CMAKE_INSTALL_PREFIX=~/libraries/libpcl-1.11.1 -D CMAKE_BUILD_TYPE=Release ..
-*make -j 20
-*sudo make install
+* cd ~/programs
+* git clone https://github.com/PointCloudLibrary/pcl.git --> download source file where you want to locate.
+* cd pcl
+* mkdir build
+* cd build
+* cmake -D BUILD_CUDA=0 -D BUILD_GPU=0 -D WITH_CUDA=0 -D CMAKE_INSTALL_PREFIX=~/libraries/libpcl-1.11.1 -D CMAKE_BUILD_TYPE=Release ..
+* make -j 20
+* sudo make install
 
 ####  <span style="color: pink">How to add Cmake file</span>
 * set(PCL_DIR "~/libraries/libpcl-1.12.1/share/pcl-1.12/")
@@ -37,3 +37,7 @@ https://www.youtube.com/watch?v=4L6A2cyH_II&list=PLI9niWoEI8BghYVuZ1c0jHLidw4vRO
 * blue --> non-ground point point cloud
 
 <span style="color: orange">You can use .rviz saved configuration file to open point clouds on rviz.</span>
+
+
+<font color="red">fssfwe</font>
+
