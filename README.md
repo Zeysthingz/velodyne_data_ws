@@ -1,4 +1,4 @@
-### Velodyne Lidar Data Segmentation as Ground and Non-Ground
+### Lidar Data Segmentation as Ground and Non-Ground
 
 In this repo, the point cloud data from lidar is separated as ground and non-ground then visualized on rviz.
 
@@ -55,4 +55,8 @@ https://www.youtube.com/watch?v=4L6A2cyH_II&list=PLI9niWoEI8BghYVuZ1c0jHLidw4vRO
 
 #### Why Do We Have Outliers ?
 
+As you can see below the Ransac algorithm assumes inliers the greatest plain as groundand tries draw a line on it  , if the ground is curved rather than plain, the algorithm fails to make an exact distinction.
 
+![alt text](https://pcl.readthedocs.io/projects/tutorials/en/latest/_images/random_sample_example2.png)
+
+You can increase iteration and change distance parameter between points to get better results.
