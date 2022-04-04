@@ -60,3 +60,9 @@ As you can see below the Ransac algorithm assumes inliers the greatest plain as 
 ![alt text](https://pcl.readthedocs.io/projects/tutorials/en/latest/_images/random_sample_example2.png)
 
 You can increase iteration and change distance parameter between points to get better results.
+
+#### PCL EUCLIDEAN CLUSTER 
+
+I created new node as /cloud_cluster adn used KdTree algorithm on it.You can see result from the link below. 
+
+https://youtu.be/cmkcNE8-RGc
