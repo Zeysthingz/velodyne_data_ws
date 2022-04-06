@@ -1,0 +1,49 @@
+[0.017s] Invoking command in '/home/zeys/projects/velodyne_data_ws/build/udacity-pcl-tut': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic PS1=\u@\h \[\033[32m\]\w\[\033[33m\]$(parse_git_branch)\[\033[00m\] $ /usr/bin/cmake /home/zeys/projects/velodyne_data_ws/src/udacity-pcl-tut -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -DCMAKE_INSTALL_PREFIX=/home/zeys/projects/velodyne_data_ws/install/udacity-pcl-tut
+[0.025s] -- Found ament_cmake: 1.1.5 (/opt/ros/galactic/share/ament_cmake/cmake)
+[0.038s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.069s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.073s] -- Found ament_lint_auto: 0.10.6 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[0.074s] -- Found rclcpp: 9.2.0 (/opt/ros/galactic/share/rclcpp/cmake)
+[0.095s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.096s] -- Found rosidl_adapter: 2.2.1 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[0.168s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.198s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[0.199s] -- Found rmw_cyclonedds_cpp: 0.22.4 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[0.210s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.330s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.330s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.330s] -- Configured cppcheck include dirs: 
+[0.330s] -- Configured cppcheck exclude dirs and/or files: 
+[0.331s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.331s] -- Configured cpplint exclude dirs and/or files: 
+[0.331s] -- Added test 'lint_cmake' to check CMake code style
+[0.331s] -- Added test 'uncrustify' to check C / C++ code style
+[0.331s] -- Configured uncrustify additional arguments: 
+[0.331s] -- Added test 'xmllint' to check XML markup files
+[0.333s] -- Configuring done
+[0.337s] -- Generating done
+[0.338s] -- Build files have been written to: /home/zeys/projects/velodyne_data_ws/build/udacity-pcl-tut
+[0.343s] Invoked command in '/home/zeys/projects/velodyne_data_ws/build/udacity-pcl-tut' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic PS1=\u@\h \[\033[32m\]\w\[\033[33m\]$(parse_git_branch)\[\033[00m\] $ /usr/bin/cmake /home/zeys/projects/velodyne_data_ws/src/udacity-pcl-tut -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -DCMAKE_INSTALL_PREFIX=/home/zeys/projects/velodyne_data_ws/install/udacity-pcl-tut
+[0.344s] Invoking command in '/home/zeys/projects/velodyne_data_ws/build/udacity-pcl-tut': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic PS1=\u@\h \[\033[32m\]\w\[\033[33m\]$(parse_git_branch)\[\033[00m\] $ /usr/bin/cmake --build /home/zeys/projects/velodyne_data_ws/build/udacity-pcl-tut -- -j16 -l16
+[0.381s] [100%] Built target talker
+[0.393s] Invoked command in '/home/zeys/projects/velodyne_data_ws/build/udacity-pcl-tut' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic PS1=\u@\h \[\033[32m\]\w\[\033[33m\]$(parse_git_branch)\[\033[00m\] $ /usr/bin/cmake --build /home/zeys/projects/velodyne_data_ws/build/udacity-pcl-tut -- -j16 -l16
+[0.436s] Invoking command in '/home/zeys/projects/velodyne_data_ws/build/udacity-pcl-tut': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic PS1=\u@\h \[\033[32m\]\w\[\033[33m\]$(parse_git_branch)\[\033[00m\] $ /usr/bin/cmake --install /home/zeys/projects/velodyne_data_ws/build/udacity-pcl-tut
+[0.443s] -- Install configuration: "RelWithDebInfo"
+[0.443s] -- Execute custom install script
+[0.444s] -- Up-to-date symlink: /home/zeys/projects/velodyne_data_ws/install/udacity-pcl-tut/lib/udacity-pcl-tut/talker
+[0.444s] -- Up-to-date symlink: /home/zeys/projects/velodyne_data_ws/install/udacity-pcl-tut/share/ament_index/resource_index/package_run_dependencies/udacity-pcl-tut
+[0.444s] -- Up-to-date symlink: /home/zeys/projects/velodyne_data_ws/install/udacity-pcl-tut/share/ament_index/resource_index/parent_prefix_path/udacity-pcl-tut
+[0.445s] -- Up-to-date symlink: /home/zeys/projects/velodyne_data_ws/install/udacity-pcl-tut/share/udacity-pcl-tut/environment/ament_prefix_path.sh
+[0.445s] -- Up-to-date symlink: /home/zeys/projects/velodyne_data_ws/install/udacity-pcl-tut/share/udacity-pcl-tut/environment/ament_prefix_path.dsv
+[0.445s] -- Up-to-date symlink: /home/zeys/projects/velodyne_data_ws/install/udacity-pcl-tut/share/udacity-pcl-tut/environment/path.sh
+[0.445s] -- Up-to-date symlink: /home/zeys/projects/velodyne_data_ws/install/udacity-pcl-tut/share/udacity-pcl-tut/environment/path.dsv
+[0.446s] -- Up-to-date symlink: /home/zeys/projects/velodyne_data_ws/install/udacity-pcl-tut/share/udacity-pcl-tut/local_setup.bash
+[0.446s] -- Up-to-date symlink: /home/zeys/projects/velodyne_data_ws/install/udacity-pcl-tut/share/udacity-pcl-tut/local_setup.sh
+[0.446s] -- Up-to-date symlink: /home/zeys/projects/velodyne_data_ws/install/udacity-pcl-tut/share/udacity-pcl-tut/local_setup.zsh
+[0.447s] -- Up-to-date symlink: /home/zeys/projects/velodyne_data_ws/install/udacity-pcl-tut/share/udacity-pcl-tut/local_setup.dsv
+[0.447s] -- Symlinking: /home/zeys/projects/velodyne_data_ws/install/udacity-pcl-tut/share/udacity-pcl-tut/package.dsv
+[0.456s] -- Up-to-date symlink: /home/zeys/projects/velodyne_data_ws/install/udacity-pcl-tut/share/ament_index/resource_index/packages/udacity-pcl-tut
+[0.456s] -- Up-to-date symlink: /home/zeys/projects/velodyne_data_ws/install/udacity-pcl-tut/share/udacity-pcl-tut/cmake/udacity-pcl-tutConfig.cmake
+[0.456s] -- Up-to-date symlink: /home/zeys/projects/velodyne_data_ws/install/udacity-pcl-tut/share/udacity-pcl-tut/cmake/udacity-pcl-tutConfig-version.cmake
+[0.457s] -- Up-to-date symlink: /home/zeys/projects/velodyne_data_ws/install/udacity-pcl-tut/share/udacity-pcl-tut/package.xml
+[0.462s] Invoked command in '/home/zeys/projects/velodyne_data_ws/build/udacity-pcl-tut' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic PS1=\u@\h \[\033[32m\]\w\[\033[33m\]$(parse_git_branch)\[\033[00m\] $ /usr/bin/cmake --install /home/zeys/projects/velodyne_data_ws/build/udacity-pcl-tut

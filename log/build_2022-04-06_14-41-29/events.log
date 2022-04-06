@@ -1,0 +1,143 @@
+[0.000000] (-) TimerEvent: {}
+[0.000215] (udacity-pcl-tut) JobQueued: {'identifier': 'udacity-pcl-tut', 'dependencies': OrderedDict()}
+[0.000239] (udacity-pcl-tut) JobStarted: {'identifier': 'udacity-pcl-tut'}
+[0.014484] (udacity-pcl-tut) JobProgress: {'identifier': 'udacity-pcl-tut', 'progress': 'cmake'}
+[0.014697] (udacity-pcl-tut) Command: {'cmd': ['/usr/bin/cmake', '/home/zeys/projects/velodyne_data_ws/src/udacity-pcl-tut', '-DCMAKE_BUILD_TYPE=RelWithDebInfo', '-DCMAKE_EXPORT_COMPILE_COMMANDS=1', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/zeys/projects/velodyne_data_ws/install/udacity-pcl-tut'], 'cwd': '/home/zeys/projects/velodyne_data_ws/build/udacity-pcl-tut', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'zeys'), ('LC_TIME', 'tr_TR.UTF-8'), ('SSH_AGENT_PID', '2028'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/zeys'), ('OLDPWD', '/home/zeys/projects/velodyne_data_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PS1', '\\u@\\h \\[\\033[32m\\]\\w\\[\\033[33m\\]$(parse_git_branch)\\[\\033[00m\\] $'), ('LC_MONETARY', 'tr_TR.UTF-8'), ('MANAGERPID', '1752'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '31396'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/zeys/Desktop/test_ws/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'zeys'), ('JOURNAL_STREAM', '8:45670'), ('_', '/home/zeys/.local/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'zeys'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/home/zeys/MyBins:/home/zeys/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/zeys:@/tmp/.ICE-unix/2066,unix/zeys:/tmp/.ICE-unix/2066'), ('INVOCATION_ID', '9350d0445ec44a949af40e7b7a085990'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'tr_TR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'tr_TR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/home/zeys/Desktop/test_ws/install/cpp_pubsub:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('LC_NAME', 'tr_TR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:d788449a-793a-49a1-b53a-dea30fbe2b45'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'tr_TR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'tr_TR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zeys/projects/velodyne_data_ws/build/udacity-pcl-tut'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/galactic/lib/python3.8/site-packages'), ('LC_NUMERIC', 'tr_TR.UTF-8'), ('LC_PAPER', 'tr_TR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/zeys/Desktop/test_ws/install/cpp_pubsub:/opt/ros/galactic')]), 'shell': False}
+[0.048467] (udacity-pcl-tut) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.086146] (udacity-pcl-tut) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.088857] (udacity-pcl-tut) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.099676] (-) TimerEvent: {}
+[0.153694] (udacity-pcl-tut) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.154540] (udacity-pcl-tut) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199808] (-) TimerEvent: {}
+[0.243431] (udacity-pcl-tut) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.256898] (udacity-pcl-tut) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.257156] (udacity-pcl-tut) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.259963] (udacity-pcl-tut) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.300000] (-) TimerEvent: {}
+[0.335856] (udacity-pcl-tut) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.336484] (udacity-pcl-tut) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.400162] (-) TimerEvent: {}
+[0.418671] (udacity-pcl-tut) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.425684] (udacity-pcl-tut) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.426019] (udacity-pcl-tut) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.427101] (udacity-pcl-tut) StdoutLine: {'line': b'-- Found ament_cmake: 1.1.5 (/opt/ros/galactic/share/ament_cmake/cmake)\n'}
+[0.441293] (udacity-pcl-tut) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.441373] (udacity-pcl-tut) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.473855] (udacity-pcl-tut) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.486379] (udacity-pcl-tut) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.10.6 (/opt/ros/galactic/share/ament_lint_auto/cmake)\n'}
+[0.487224] (udacity-pcl-tut) StdoutLine: {'line': b'-- Found rclcpp: 9.2.0 (/opt/ros/galactic/share/rclcpp/cmake)\n'}
+[0.500261] (-) TimerEvent: {}
+[0.515007] (udacity-pcl-tut) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.518500] (udacity-pcl-tut) StdoutLine: {'line': b'-- Found rosidl_adapter: 2.2.1 (/opt/ros/galactic/share/rosidl_adapter/cmake)\n'}
+[0.562243] (udacity-pcl-tut) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[0.581064] (udacity-pcl-tut) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/galactic/include  \n'}
+[0.600405] (-) TimerEvent: {}
+[0.628713] (udacity-pcl-tut) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.665487] (udacity-pcl-tut) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)\n'}
+[0.666997] (udacity-pcl-tut) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 0.22.4 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)\n'}
+[0.680312] (udacity-pcl-tut) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[0.680829] (udacity-pcl-tut) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.700488] (-) TimerEvent: {}
+[0.737758] (udacity-pcl-tut) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.738053] (udacity-pcl-tut) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.800617] (-) TimerEvent: {}
+[0.820588] (udacity-pcl-tut) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[0.820761] (udacity-pcl-tut) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[0.898892] (udacity-pcl-tut) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[0.899364] (udacity-pcl-tut) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[0.900817] (-) TimerEvent: {}
+[0.990359] (udacity-pcl-tut) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[0.991035] (udacity-pcl-tut) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.000925] (-) TimerEvent: {}
+[1.101101] (-) TimerEvent: {}
+[1.121590] (udacity-pcl-tut) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.122123] (udacity-pcl-tut) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.122193] (udacity-pcl-tut) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[1.122234] (udacity-pcl-tut) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.122576] (udacity-pcl-tut) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[1.122666] (udacity-pcl-tut) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[1.122953] (udacity-pcl-tut) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.123426] (udacity-pcl-tut) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.123496] (udacity-pcl-tut) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.123642] (udacity-pcl-tut) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.125502] (udacity-pcl-tut) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.129566] (udacity-pcl-tut) StdoutLine: {'line': b'-- Generating done\n'}
+[1.130438] (udacity-pcl-tut) StdoutLine: {'line': b'-- Build files have been written to: /home/zeys/projects/velodyne_data_ws/build/udacity-pcl-tut\n'}
+[1.135641] (udacity-pcl-tut) CommandEnded: {'returncode': 0}
+[1.136051] (udacity-pcl-tut) JobProgress: {'identifier': 'udacity-pcl-tut', 'progress': 'build'}
+[1.136637] (udacity-pcl-tut) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/zeys/projects/velodyne_data_ws/build/udacity-pcl-tut', '--', '-j16', '-l16'], 'cwd': '/home/zeys/projects/velodyne_data_ws/build/udacity-pcl-tut', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'zeys'), ('LC_TIME', 'tr_TR.UTF-8'), ('SSH_AGENT_PID', '2028'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/zeys'), ('OLDPWD', '/home/zeys/projects/velodyne_data_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PS1', '\\u@\\h \\[\\033[32m\\]\\w\\[\\033[33m\\]$(parse_git_branch)\\[\\033[00m\\] $'), ('LC_MONETARY', 'tr_TR.UTF-8'), ('MANAGERPID', '1752'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '31396'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/zeys/Desktop/test_ws/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'zeys'), ('JOURNAL_STREAM', '8:45670'), ('_', '/home/zeys/.local/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'zeys'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/home/zeys/MyBins:/home/zeys/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/zeys:@/tmp/.ICE-unix/2066,unix/zeys:/tmp/.ICE-unix/2066'), ('INVOCATION_ID', '9350d0445ec44a949af40e7b7a085990'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'tr_TR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'tr_TR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/home/zeys/Desktop/test_ws/install/cpp_pubsub:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('LC_NAME', 'tr_TR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:d788449a-793a-49a1-b53a-dea30fbe2b45'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'tr_TR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'tr_TR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zeys/projects/velodyne_data_ws/build/udacity-pcl-tut'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/galactic/lib/python3.8/site-packages'), ('LC_NUMERIC', 'tr_TR.UTF-8'), ('LC_PAPER', 'tr_TR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/zeys/Desktop/test_ws/install/cpp_pubsub:/opt/ros/galactic')]), 'shell': False}
+[1.164318] (udacity-pcl-tut) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target talker\x1b[0m\n'}
+[1.187321] (udacity-pcl-tut) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/talker.dir/src/publisher_member_function.cpp.o\x1b[0m\n'}
+[1.201248] (-) TimerEvent: {}
+[1.301594] (-) TimerEvent: {}
+[1.401969] (-) TimerEvent: {}
+[1.502279] (-) TimerEvent: {}
+[1.602580] (-) TimerEvent: {}
+[1.702902] (-) TimerEvent: {}
+[1.803210] (-) TimerEvent: {}
+[1.903520] (-) TimerEvent: {}
+[2.003856] (-) TimerEvent: {}
+[2.104244] (-) TimerEvent: {}
+[2.204550] (-) TimerEvent: {}
+[2.304860] (-) TimerEvent: {}
+[2.405213] (-) TimerEvent: {}
+[2.505518] (-) TimerEvent: {}
+[2.605814] (-) TimerEvent: {}
+[2.706147] (-) TimerEvent: {}
+[2.806522] (-) TimerEvent: {}
+[2.906827] (-) TimerEvent: {}
+[3.007087] (-) TimerEvent: {}
+[3.107377] (-) TimerEvent: {}
+[3.207694] (-) TimerEvent: {}
+[3.307995] (-) TimerEvent: {}
+[3.408251] (-) TimerEvent: {}
+[3.508545] (-) TimerEvent: {}
+[3.608829] (-) TimerEvent: {}
+[3.709187] (-) TimerEvent: {}
+[3.809473] (-) TimerEvent: {}
+[3.909777] (-) TimerEvent: {}
+[4.010092] (-) TimerEvent: {}
+[4.110358] (-) TimerEvent: {}
+[4.210611] (-) TimerEvent: {}
+[4.310909] (-) TimerEvent: {}
+[4.411157] (-) TimerEvent: {}
+[4.511463] (-) TimerEvent: {}
+[4.611772] (-) TimerEvent: {}
+[4.712077] (-) TimerEvent: {}
+[4.812375] (-) TimerEvent: {}
+[4.912624] (-) TimerEvent: {}
+[5.012946] (-) TimerEvent: {}
+[5.113290] (-) TimerEvent: {}
+[5.213592] (-) TimerEvent: {}
+[5.313927] (-) TimerEvent: {}
+[5.414223] (-) TimerEvent: {}
+[5.502792] (udacity-pcl-tut) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable talker\x1b[0m\n'}
+[5.514373] (-) TimerEvent: {}
+[5.589960] (udacity-pcl-tut) StdoutLine: {'line': b'[100%] Built target talker\n'}
+[5.596571] (udacity-pcl-tut) CommandEnded: {'returncode': 0}
+[5.609170] (udacity-pcl-tut) JobProgress: {'identifier': 'udacity-pcl-tut', 'progress': 'install'}
+[5.614346] (udacity-pcl-tut) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/zeys/projects/velodyne_data_ws/build/udacity-pcl-tut'], 'cwd': '/home/zeys/projects/velodyne_data_ws/build/udacity-pcl-tut', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'zeys'), ('LC_TIME', 'tr_TR.UTF-8'), ('SSH_AGENT_PID', '2028'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/zeys'), ('OLDPWD', '/home/zeys/projects/velodyne_data_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PS1', '\\u@\\h \\[\\033[32m\\]\\w\\[\\033[33m\\]$(parse_git_branch)\\[\\033[00m\\] $'), ('LC_MONETARY', 'tr_TR.UTF-8'), ('MANAGERPID', '1752'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '31396'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/zeys/Desktop/test_ws/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'zeys'), ('JOURNAL_STREAM', '8:45670'), ('_', '/home/zeys/.local/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'zeys'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/home/zeys/MyBins:/home/zeys/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/zeys:@/tmp/.ICE-unix/2066,unix/zeys:/tmp/.ICE-unix/2066'), ('INVOCATION_ID', '9350d0445ec44a949af40e7b7a085990'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'tr_TR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'tr_TR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/home/zeys/Desktop/test_ws/install/cpp_pubsub:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('LC_NAME', 'tr_TR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:d788449a-793a-49a1-b53a-dea30fbe2b45'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'tr_TR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'tr_TR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zeys/projects/velodyne_data_ws/build/udacity-pcl-tut'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/galactic/lib/python3.8/site-packages'), ('LC_NUMERIC', 'tr_TR.UTF-8'), ('LC_PAPER', 'tr_TR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/zeys/Desktop/test_ws/install/cpp_pubsub:/opt/ros/galactic')]), 'shell': False}
+[5.615462] (-) TimerEvent: {}
+[5.619462] (udacity-pcl-tut) StdoutLine: {'line': b'-- Install configuration: "RelWithDebInfo"\n'}
+[5.619707] (udacity-pcl-tut) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[5.619958] (udacity-pcl-tut) StdoutLine: {'line': b'-- Symlinking: /home/zeys/projects/velodyne_data_ws/install/udacity-pcl-tut/lib/udacity-pcl-tut/talker\n'}
+[5.624696] (udacity-pcl-tut) StdoutLine: {'line': b'-- Symlinking: /home/zeys/projects/velodyne_data_ws/install/udacity-pcl-tut/share/ament_index/resource_index/package_run_dependencies/udacity-pcl-tut\n'}
+[5.629632] (udacity-pcl-tut) StdoutLine: {'line': b'-- Symlinking: /home/zeys/projects/velodyne_data_ws/install/udacity-pcl-tut/share/ament_index/resource_index/parent_prefix_path/udacity-pcl-tut\n'}
+[5.636117] (udacity-pcl-tut) StdoutLine: {'line': b'-- Symlinking: /home/zeys/projects/velodyne_data_ws/install/udacity-pcl-tut/share/udacity-pcl-tut/environment/ament_prefix_path.sh\n'}
+[5.643138] (udacity-pcl-tut) StdoutLine: {'line': b'-- Symlinking: /home/zeys/projects/velodyne_data_ws/install/udacity-pcl-tut/share/udacity-pcl-tut/environment/ament_prefix_path.dsv\n'}
+[5.650211] (udacity-pcl-tut) StdoutLine: {'line': b'-- Symlinking: /home/zeys/projects/velodyne_data_ws/install/udacity-pcl-tut/share/udacity-pcl-tut/environment/path.sh\n'}
+[5.657105] (udacity-pcl-tut) StdoutLine: {'line': b'-- Symlinking: /home/zeys/projects/velodyne_data_ws/install/udacity-pcl-tut/share/udacity-pcl-tut/environment/path.dsv\n'}
+[5.662252] (udacity-pcl-tut) StdoutLine: {'line': b'-- Symlinking: /home/zeys/projects/velodyne_data_ws/install/udacity-pcl-tut/share/udacity-pcl-tut/local_setup.bash\n'}
+[5.666794] (udacity-pcl-tut) StdoutLine: {'line': b'-- Symlinking: /home/zeys/projects/velodyne_data_ws/install/udacity-pcl-tut/share/udacity-pcl-tut/local_setup.sh\n'}
+[5.671520] (udacity-pcl-tut) StdoutLine: {'line': b'-- Symlinking: /home/zeys/projects/velodyne_data_ws/install/udacity-pcl-tut/share/udacity-pcl-tut/local_setup.zsh\n'}
+[5.676029] (udacity-pcl-tut) StdoutLine: {'line': b'-- Symlinking: /home/zeys/projects/velodyne_data_ws/install/udacity-pcl-tut/share/udacity-pcl-tut/local_setup.dsv\n'}
+[5.680784] (udacity-pcl-tut) StdoutLine: {'line': b'-- Symlinking: /home/zeys/projects/velodyne_data_ws/install/udacity-pcl-tut/share/udacity-pcl-tut/package.dsv\n'}
+[5.685240] (udacity-pcl-tut) StdoutLine: {'line': b'-- Symlinking: /home/zeys/projects/velodyne_data_ws/install/udacity-pcl-tut/share/ament_index/resource_index/packages/udacity-pcl-tut\n'}
+[5.689696] (udacity-pcl-tut) StdoutLine: {'line': b'-- Symlinking: /home/zeys/projects/velodyne_data_ws/install/udacity-pcl-tut/share/udacity-pcl-tut/cmake/udacity-pcl-tutConfig.cmake\n'}
+[5.694272] (udacity-pcl-tut) StdoutLine: {'line': b'-- Symlinking: /home/zeys/projects/velodyne_data_ws/install/udacity-pcl-tut/share/udacity-pcl-tut/cmake/udacity-pcl-tutConfig-version.cmake\n'}
+[5.698693] (udacity-pcl-tut) StdoutLine: {'line': b'-- Symlinking: /home/zeys/projects/velodyne_data_ws/install/udacity-pcl-tut/share/udacity-pcl-tut/package.xml\n'}
+[5.704284] (udacity-pcl-tut) CommandEnded: {'returncode': 0}
+[5.718683] (-) TimerEvent: {}
+[5.752271] (udacity-pcl-tut) JobEnded: {'identifier': 'udacity-pcl-tut', 'rc': 0}
+[5.752531] (-) EventReactorShutdown: {}
