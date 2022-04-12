@@ -8,12 +8,10 @@ Cloud::Ptr PclStuff::Downsample(const Cloud::ConstPtr &cloud_in,
                                 float leaf_size) {
   pcl::console::TicToc tt;
   Cloud::Ptr cloud_result(new Cloud());
-//    std::cerr << "Downsampling...\n", tt.tic ();
   pcl::VoxelGrid<Point> grid;
   grid.setLeafSize(leaf_size, leaf_size, leaf_size);
   grid.setInputCloud(cloud_in);
   grid.filter(*cloud_result);
-//    std::cerr << ">> Done: " << tt.toc () << " ms, " << cloud_result->size () << " points\n";
 
   return cloud_result;
 }
@@ -29,16 +27,11 @@ PclStuff::GroundRemover(Cloud::ConstPtr cloud_in, float treshold) {
   seg.setOptimizeCoefficients(true);
   seg.setModelType(pcl::SACMODEL_PLANE);
   seg.setMethodType(pcl::SAC_RANSAC);
-//    seg.setMaxIterations(1000);
-//    seg.setDistanceThreshold(treshold);
   seg.setMaxIterations(1000);
   seg.setDistanceThreshold(treshold);
   seg.setInputCloud(cloud_in);
   seg.segment(*inliers, *coefficients);
 
-  std::cout
-      << "xxxx."
-      << std::endl;
 
   if (inliers->indices.empty()) {
     std::cout
@@ -119,11 +112,7 @@ PclStuff::EucledianCluster(Cloud::ConstPtr cloud_in) {
       cloud_cluster->push_back((p_new)); //*
 
     }
-//        std::cout << "Type of x : " << typeid(cloud_cluster).name() << std::endl;
-//        std::cout<<cloud_cluster->points.data()<<std::endl;
-//        std::cout<<(*cloud_cluster)[it]<<std::endl;
     j += 100;
-    //return cloud_cluster;
   }
 //    pointcloud configs before publish
   cloud_cluster->width = cloud_cluster->size();

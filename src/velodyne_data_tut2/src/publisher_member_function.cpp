@@ -1,49 +1,68 @@
+// Copyright 2016 Open Source Robotics Foundation, Inc.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
 #include <chrono>
+#include <functional>
 #include <memory>
+#include <string>
 
 #include "rclcpp/rclcpp.hpp"
-#include "rclcpp/subscription_options.hpp"
-
-#include "sensor_msgs/msg/point_cloud2.hpp"
 #include "std_msgs/msg/string.hpp"
-//#include "sensor_msgs/point_cloud2_iterator.hpp"
 
-class MinimalSubscriberWithTopicStatistics : public rclcpp::Node {
+using namespace std::chrono_literals;
+
+/* This example creates a subclass of Node and uses std::bind() to register a
+ * member function as a callback from the timer. */
+// built-in message type  std_msgs
+//TODO : EXPLANATİON
+// CLASS İNHERİTS FROM RCLCPP NODE
+class MinimalPublisher : public rclcpp::Node
+{
  public:
-  MinimalSubscriberWithTopicStatistics()
-      : Node("minimal_subscriber_with_topic_statistics") {
-    // manually enable topic statistics via options
-    auto options = rclcpp::SubscriptionOptions();
-    options.topic_stats_options.state = rclcpp::TopicStatisticsState::Enable;
-
-    // configure the collection window and publish period (default 1s)
-    options.topic_stats_options.publish_period = std::chrono::seconds(10);
-
-    // configure the topic name (default '/statistics')
-    // options.topic_stats_options.publish_topic = "/topic_statistics"
-
-    auto callback = [this](sensor_msgs::msg::PointCloud2::SharedPtr point_cloud2_msgs) {
-      this->topic_callback(point_cloud2_msgs);
-    };
-
-    subscription_ = this->create_subscription<sensor_msgs::msg::PointCloud2>(
-        "/mid_r/velodyne_points", 10, callback, options);
+//   CONSTURUCTOR --> gıves node name
+// queue --> mesaj kuyruğu
+  MinimalPublisher()
+      : Node("minimal_publisher"), count_(0)
+  {
+    publisher_ = this->create_publisher<std_msgs::msg::String>("topic", 10);
+    timer_ = this->create_wall_timer(
+        500ms, std::bind(&MinimalPublisher::timer_callback, this));
   }
 
  private:
-  //  void topic_callback(const std_msgs::msg::String::SharedPtr msg) const
-  void topic_callback(const sensor_msgs::msg::PointCloud2::SharedPtr point_cloud2_msgs) const {
-    auto lastIndex = point_cloud2_msgs->data.size()-2;
-    auto pcSize = std::to_string(point_cloud2_msgs->data[lastIndex]).c_str();
-
-    RCLCPP_INFO(this->get_logger(), "I heard: '%s'", pcSize);
+//  Callback asıl işin yapılduğı yerdır
+  void timer_callback()
+  {
+    auto message = std_msgs::msg::String();
+    message.data = "Hello, world! " + std::to_string(count_++);
+//    macro
+    RCLCPP_INFO(this->get_logger(), "Publishing: '%s'", message.data.c_str());
+    publisher_->publish(message);
   }
-  rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr subscription_;
+//  Timer ve publisherın tanımlamaları normalde header filedada yapabiliyorsun
+  rclcpp::TimerBase::SharedPtr timer_;
+  rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_;
+  size_t count_;
 };
 
-int main(int argc, char *argv[]) {
+// Minimal publisher classını cagırarak objeyı orneklıyor ve calıstırıyor
+int main(int argc, char * argv[])
+{
+//  ros2 init
   rclcpp::init(argc, argv);
-  rclcpp::spin(std::make_shared<MinimalSubscriberWithTopicStatistics>());
+// düğümden veri almaya işlemeye başlar 
+  rclcpp::spin(std::make_shared<MinimalPublisher>());
   rclcpp::shutdown();
   return 0;
 }
