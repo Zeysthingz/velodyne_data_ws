@@ -31,7 +31,7 @@ UdacityTut::UdacityTut(const rclcpp::NodeOptions &node_options)
     this->CallbackLaser(msg_cloud);
   };
   subscription_ = this->create_subscription<sensor_msgs::msg::PointCloud2>(
-      "/velodyne_points", 10, callback);
+      "/right/velodyne_points", 10, callback);
 
 }
 
@@ -40,7 +40,6 @@ void UdacityTut::CallbackLaser(const sensor_msgs::msg::PointCloud2::SharedPtr ms
   auto lastIndex = msg_cloud->data.size() - 2;
 
   auto pcSize = std::to_string(msg_cloud->data[lastIndex]).c_str();
-
 
   RCLCPP_INFO(this->get_logger(), "I heard: '%s'", pcSize);
 
