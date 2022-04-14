@@ -11,6 +11,14 @@ UdacityTut::UdacityTut(const rclcpp::NodeOptions &node_options)
   //// Point Clouds
 
   std::cout << PCL_VERSION << std::endl;
+  std::cout << PCL_VERSION << std::endl;
+  std::cout << PCL_VERSION << std::endl;
+  std::cout << PCL_VERSION << std::endl;
+  std::cout << PCL_VERSION << std::endl;
+  std::cout << PCL_VERSION << std::endl;
+  std::cout << PCL_VERSION << std::endl;
+  std::cout << PCL_VERSION << std::endl;
+
   pub_cloud_raw_ = this->create_publisher<sensor_msgs::msg::PointCloud2>(
       "/cloud_raw",
       10);

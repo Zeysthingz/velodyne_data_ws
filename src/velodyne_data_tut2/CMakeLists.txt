@@ -7,9 +7,11 @@ endif ()
 
 
 find_package(ament_cmake_auto REQUIRED)
-find_package(PCL REQUIRED)
-
+#find_package(PCL REQUIRED)
+set(PCL_DIR "/home/zeys/libraries/libpcl-1.12.1/share/pcl-1.12/")
+find_package(PCL 1.12.1 REQUIRED)
 ament_auto_find_build_dependencies()
+
 
 ament_auto_add_library(point_cloud_node SHARED
         include/velodyne_data_tut2/UdacityTut.h

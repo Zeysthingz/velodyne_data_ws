@@ -69,9 +69,9 @@ PclStuff::GroundFinder(Cloud::ConstPtr cloud_in, float treshold) {
   extract.setInputCloud(cloud_in);
   extract.setIndices(ground);
   extract.filter(*cloud_ground);
-  std::cout
-      << *cloud_ground
-      << std::endl;
+//  std::cout
+//      << *cloud_ground
+//      << std::endl;
 
   return cloud_ground;
 
@@ -100,8 +100,9 @@ PclStuff::EucledianCluster(Cloud::ConstPtr cloud_in) {
 
     for (const auto &idx : it->indices) {
 //          every points inside pointcloud
-      std::cout << cloud_in->points[idx] << std::endl;
-      pcl::PointXYZI p_old = cloud_in->points[idx];
+//      std::cout << cloud_in->points[idx] << std::endl;
+
+pcl::PointXYZI p_old = cloud_in->points[idx];
       pcl::PointXYZI p_new;
       p_new.x = p_old.x;
       p_new.y = p_old.y;
