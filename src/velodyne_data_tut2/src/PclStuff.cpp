@@ -32,7 +32,6 @@ PclStuff::GroundRemover(Cloud::ConstPtr cloud_in, float treshold) {
   seg.setInputCloud(cloud_in);
   seg.segment(*inliers, *coefficients);
 
-
   if (inliers->indices.empty()) {
     std::cout
         << "Could not estimate a planar model for the given dataset."
@@ -79,13 +78,14 @@ PclStuff::GroundFinder(Cloud::ConstPtr cloud_in, float treshold) {
 
 Cloud::Ptr
 PclStuff::EucledianCluster(Cloud::ConstPtr cloud_in) {
+
+
 //    clud_in :point cloud includes sub points
   // Creating the KdTree object for the search method of the extraction
   pcl::search::KdTree<pcl::PointXYZI>::Ptr tree(new pcl::search::KdTree<pcl::PointXYZI>);
   tree->setInputCloud(cloud_in);
   std::vector<pcl::PointIndices> cluster_indices;
   pcl::EuclideanClusterExtraction<pcl::PointXYZI> ec;
-
   ec.setClusterTolerance(0.2); // 2cm
   ec.setMinClusterSize(18);
   ec.setMaxClusterSize(2500);
@@ -102,7 +102,7 @@ PclStuff::EucledianCluster(Cloud::ConstPtr cloud_in) {
 //          every points inside pointcloud
 //      std::cout << cloud_in->points[idx] << std::endl;
 
-pcl::PointXYZI p_old = cloud_in->points[idx];
+      pcl::PointXYZI p_old = cloud_in->points[idx];
       pcl::PointXYZI p_new;
       p_new.x = p_old.x;
       p_new.y = p_old.y;

@@ -43,4 +43,5 @@ rclcpp_components_register_node(point_cloud_node
 ament_auto_package(
         INSTALL_TO_SHARE
         launch
+        param
 )

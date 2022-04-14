@@ -1,11 +1,17 @@
 #include <velodyne_data_tut2/UdacityTut.h>
-
+#include <cstring>
+#include <iostream>
+#include <string>
 using namespace std::chrono_literals;
 
 namespace UdacityTutNO {
-
 UdacityTut::UdacityTut(const rclcpp::NodeOptions &node_options)
     : Node("point_cloud_node", node_options) {
+
+   _min_cluster_size = this->declare_parameter("min_cluster_size", 0.0);
+   _leaf_size = this->declare_parameter("leaf_size", 0.0);
+   RCLCPP_INFO(this->get_logger(), "%f\n\n\n", this->_leaf_size);
+
 
   // Publishers
   //// Point Clouds
@@ -51,13 +57,19 @@ void UdacityTut::CallbackLaser(const sensor_msgs::msg::PointCloud2::SharedPtr ms
 
   RCLCPP_INFO(this->get_logger(), "I heard: '%s'", pcSize);
 
+    //  float _leaf_size;
+//
+//  this->get_parameter("min_cluster_size", _min_cluster_size);
+
+
+
   // Convert Point Cloud Message to PCL Point Cloud format
   Cloud::Ptr cloud_in(new Cloud);
   pcl::fromROSMsg(*msg_cloud, *cloud_in);
-  RosRelated::PublishCloud(cloud_in, pub_cloud_raw_);
+//  RosRelated::PublishCloud(cloud_in, pub_cloud_raw_);
 
   // Downsample it
-  Cloud::Ptr cloud_ds = PclStuff::Downsample(cloud_in, 0.2f);
+  Cloud::Ptr cloud_ds = PclStuff::Downsample(cloud_in, _leaf_size);
   RosRelated::PublishCloud(cloud_ds, pub_cloud_downsampled_);
 
 ////   Remove ground from the downsampled point cloud

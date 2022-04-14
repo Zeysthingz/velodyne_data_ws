@@ -1,0 +1,7 @@
+---
+/**:
+  ros__parameters:
+    frame_id:  "lidar_right"
+     leaf_size: 0.2
+     treshold: 0.3
+     min_cluster_size: 0.3

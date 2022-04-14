@@ -14,6 +14,10 @@ class UdacityTut : public rclcpp::Node {
   using Point = pcl::PointXYZI;
   using Cloud = pcl::PointCloud<pcl::PointXYZI>;
 
+  float _min_cluster_size{3.14};
+  float _leaf_size{3.14};
+
+
   explicit UdacityTut(const rclcpp::NodeOptions &node_options);
   rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr subscription_;
   rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr pub_cloud_raw_;

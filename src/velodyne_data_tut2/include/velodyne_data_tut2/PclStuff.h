@@ -33,7 +33,6 @@ class PclStuff {
 public:
   using Point = pcl::PointXYZI;
   using Cloud = pcl::PointCloud<pcl::PointXYZI>;
-
   static Cloud::Ptr
   Downsample(const Cloud::ConstPtr &cloud_in, float leaf_size);
 
